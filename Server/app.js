@@ -8,8 +8,10 @@ app.use(bodyparser.json());
 
 //Import Routes
 const postsRoute = require('./routes/post');
+const userRoute = require('./routes/user');
 
 
 app.use("/posts", postsRoute);
+app.use("/user",userRoute);
 
 module.exports= app;
