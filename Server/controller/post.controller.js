@@ -5,6 +5,10 @@ const models = require('../models');
 function save(req,res){
 
     //This Object will fetch data and containsa exactly same attributes as post model
+    // we have user data in this.
+    console.log(req.userdata);
+
+
     const post={
         title:req.body.title,
         content:req.body.content,
